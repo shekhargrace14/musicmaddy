@@ -5,7 +5,7 @@ const Card = (props) => {
     <div className='column'>
 
           <div className='card'>
-            <iframe title={props.title} src={props.video}/>
+            <iframe title={props.title} src={props.video} height="fit"/>
             <div className='info'> 
                 <h3 className='title'>{props.title}</h3>
                 <p className='artist'>{props.artist}</p>
