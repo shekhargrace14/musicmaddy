@@ -2,12 +2,14 @@ import React from 'react'
 import Nav from '../components/Nav'
 import Card from '../components/Card'
 import songData from "../Data/songData"
+import Hero from '../components/Hero'
 
 const Home = () => {
   return (
-    <div>
+    <>
     
         <Nav/>
+        <Hero/>
         <div className='container'>
             <div className='row '>
                 { songData.map(({video, title, artist, language})=>{
@@ -22,7 +24,8 @@ const Home = () => {
                 })}
             </div>
         </div>
-    </div>
+
+    </>
   )
 }
 
