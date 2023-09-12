@@ -10,18 +10,22 @@ const Home = () => {
     
         <Nav/>
         <Hero/>
-        <div className='container'>
-            <div className='row '>
-                { songData.map(({video, title, artist, language})=>{
-                    return(
-                        <Card 
-                            video={video}
-                            title={title}
-                            artist={artist}
-                            language={language}
-                        />
-                    )
-                })}
+        <div className='postCard'>
+            <div className='container'>
+                <div className='row d-flex j-between'>
+
+                        { songData.map(({video, title, artist, language})=>{
+                            return(
+
+                                <Card 
+                                    video={video}
+                                    title={title}
+                                    artist={artist}
+                                    language={language}
+                                />
+                            )
+                        })}
+                </div>
             </div>
         </div>
 

@@ -68,6 +68,7 @@ h3{
 .container{
   width: 80%;
   margin: 0 auto;
+  padding: 80px 40px;
 }
 .row{
   width: 100%;
@@ -89,7 +90,7 @@ h3{
 /* Hero starts from here */
 .hero{
   position: relative;
-  height: 100vh;
+  height: 70vh;
 }
 .hero .background-image{
   width: 100%;
@@ -123,9 +124,14 @@ h3{
 
 
 /* card start here */
-
+.postCard{
+  background-color: yellow;
+}
+.postCard .column{
+  width: 33%;
+}
 .card{
-  width: 30%;
+  width: 100%;
   background-color: #181818;
   padding: .5rem;
   margin: 0 0 2rem  ;

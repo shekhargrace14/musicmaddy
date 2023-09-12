@@ -1,0 +1,13 @@
+@media screen and (max-width:769px){
+    html{
+        background-color: red;
+    }
+    .container{
+        width: 100%;
+        padding: 15px 15px;
+      }
+    .postCard .column{
+        width: 100%;
+    }
+
+}
