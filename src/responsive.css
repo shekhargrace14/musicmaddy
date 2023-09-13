@@ -5,7 +5,16 @@
     .container{
         width: 100%;
         padding: 15px 15px;
-      }
+    }
+    .hero .text{
+        width: 100%;
+        padding: 0;
+    }
+    
+
+    .hero .text .column {
+        width: 100%;
+    }
     .postCard .column{
         width: 45%;
     }
