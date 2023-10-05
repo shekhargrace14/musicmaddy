@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Contact from './pages/Contact'
+import SongPage from './pages/SongPage'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path='/about' element={<About/>}/>
           <Route exact path='/blog' element={<Blog/>}/>
           <Route exact path='/contact' element={<Contact/>}/>
+          <Route exact path='/songpage' element={<SongPage/>}/>
         </Routes>
       </BrowserRouter>
   )
