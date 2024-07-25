@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaEye, FaHeart, FaUser } from 'react-icons/fa'
+import Category from './Category'
 
 const SkeletonPage = () => {
     return (
@@ -31,6 +32,8 @@ const SkeletonPage = () => {
                     {/* <RelatedBlogs /> */}
                 </section>
                 <aside className='lg:w-3/12 w-full  bg-gray-100'>
+                    <Category/>
+
                 </aside>
             </main>
         </div>

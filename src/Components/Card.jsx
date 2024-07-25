@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import Skeleton from './Skeleton'
 
 const Card = ({item }) => {
+
     return (
-        <>
+        <>  
 
             <div className='  border-gray-100 border-2  lg:block md:flex gap-2 items-[space-between]'>
                 {/* <iframe width="100%" height="auto" src={item.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
@@ -15,7 +16,7 @@ const Card = ({item }) => {
 
                 <div className='w-full md:w-1/2 lg:w-full p-2'>
 
-                    <Link to={`./singleBlogPage/${item.id}`}>
+                    <Link to={`/singleBlogPage/${item.id}`}>
                         <div className=''>
 
                             <h3 className='line-clamp-2 text-xl mb-2 font-semibold'>{item.title}</h3>
