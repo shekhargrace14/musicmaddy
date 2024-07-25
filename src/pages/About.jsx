@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Banner from '../Components/Banner'
 
 const About = () => {
   return (
     <div>
-        about
-    </div>
+      <Banner title={"About"} button={null}/>
+  </div>
   )
 }
 

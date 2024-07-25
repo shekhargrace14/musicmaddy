@@ -1,6 +1,6 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
-import logo from "../assets/react.svg"
+import logo from "../../public/assets/logo.png"
 const Navbar = () => {
     const navMenuLinks = [
         {menuName:"Home", path:"/"},
@@ -12,13 +12,13 @@ const Navbar = () => {
     <section className='sm:container mx-auto py-2 bg-gray-200'>
         <div className='row flex justify-between'>
             <div className='column logo'>
-                <img src={logo}/>
+                <img className='w-6/12' src={logo}/>
             </div>
             <nav className=' flex items-center'>
-                <ul className='bg-red-500 flex justify-between'>
+                <ul className='flex justify-between gap-8'>
                     {
-                        navMenuLinks.map(({menuName,path})=>(   
-                            <li className='mr-8' key={menuName} ><Link to={path}>{menuName}</Link></li>
+                        navMenuLinks.map((item,index)=>(   
+                            <li  key={index} ><Link to={item.path}>{item.menuName}</Link></li>
                         ))
                     }
                 </ul>
