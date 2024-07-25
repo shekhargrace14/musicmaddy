@@ -1,23 +1,33 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Banner from '../Components/Banner'
 import { ProductContext } from '../context/ProductContext'
 import { useParams } from 'react-router-dom'
 import { FaEye, FaHeart, FaUser } from 'react-icons/fa'
 import RelatedBlogs from '../Components/RelatedBlogs'
 import { Helmet } from 'react-helmet'
+import Skeleton from '../Components/Skeleton'
+import SkeletonPage from '../Components/SkeletonPage'
 
 const singleBlogPage = () => {
     const { state: { products } } = useContext(ProductContext);
     const { id } = useParams();
-
-    const singleBlog = products.find(item => item.id === parseInt(id));
+    const [singleBlog, setSingleBlog] = useState(null);
+  
+    useEffect(() => {
+      if (products) {
+        const blog = products.find(item => item.id === parseInt(id));
+        setSingleBlog(blog);
+      }
+    }, [id, products]);
+  
+    if (!singleBlog) {
+      return <div><SkeletonPage/></div>;
+    }
 
     console.log(id); // Debug: Logs the id from the URL
     console.log(singleBlog); // Debug: Logs the found product
 
-    if (!singleBlog) {
-        return <div>Blog post not found</div>;
-    }
+
 
     return (
         <div>

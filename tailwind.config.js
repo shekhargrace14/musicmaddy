@@ -11,8 +11,8 @@ export default {
       },
       keyframes:{
         skeletonLoading : { 
-        '0%' :{ backgroundColor: 'hsl(200, 200, 70%)' } ,
-        '100%' :{ backgroundColor: 'hsl(200, 200, 95%)' } ,
+        '0%' :{ backgroundColor: 'rgba(128, 128, 128, 0.3)' } ,
+        '100%' :{ backgroundColor: 'rgba(128, 128, 128, 0.7)' } ,
         }
       }
     },
