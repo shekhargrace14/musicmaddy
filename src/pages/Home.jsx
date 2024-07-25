@@ -4,6 +4,7 @@ import { ProductContext } from '../context/ProductContext'
 import { FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Card from '../Components/Card'
+import Category from '../Components/Category'
 
 const Home = () => {
   const { state: { products } } = useContext(ProductContext)
@@ -20,10 +21,8 @@ const Home = () => {
           </div>
         </section>
 
-
-
         <aside className='lg:w-3/12 w-full bg-gray-100'>
-
+            <Category/>
         </aside>
       </main>
 

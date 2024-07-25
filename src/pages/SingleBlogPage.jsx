@@ -44,10 +44,11 @@ const singleBlogPage = () => {
                     </div>
 
                     <div className='md:w-8/12 grid'>
-                        <h1 className='md:text-2xl text-xl my-2 font-semibold'>{singleBlog.title}</h1>
+                        <h1 className='md:text-2xl text-xl font-semibold'>{singleBlog.title}</h1>
                         <p className='sm:line-clamp-2' dangerouslySetInnerHTML={{ __html: singleBlog.artist }} />
-                        <p className='flex items-center gap-1 '><FaUser /> {singleBlog.author}</p>
-                        <p>Published: {singleBlog.published_date}</p>
+                        <p>Band : {singleBlog.band}</p>
+                        {/* <p className='flex items-center gap-1 '><FaUser /> {singleBlog.author}</p> */}
+                        {/* <p>Published: {singleBlog.published_date}</p> */}
                         {/* <p className='flex items-center gap-1'>{singleBlog.artist}</p> */}
 
                     </div>

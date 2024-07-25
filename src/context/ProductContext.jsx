@@ -15,8 +15,7 @@ const ProductProvider = ({children}) =>{
     const [products, setProducts] = useState([])
     useEffect(() => {
         const fetchProducts = async () => {
-            // const res = await fetch("https://script.google.com/macros/s/AKfycbx-VFLOuFryzQDm7Si-_Uf4YkAOpFgtmMKDg6EqILy4XndEgWs68eqiQcyZkAN0710dpA/exec?action=songsData");
-            const res = await fetch("https://script.google.com/macros/s/AKfycbz44Ya3wZBUrIcSAPDB9lGrQycGqfMdtS0CogalVYLzrjh8EDZ7N_wTY1TrTLBLcTYbJw/exec?action=songsData");
+            const res = await fetch("https://script.google.com/macros/s/AKfycbxGeudrBKjY7l4P0_tifJs2wEqmucIvXSS9P2ZEW6_6FlfHDCSnqhTa1zeScmaNm4mafA/exec?action=songsData");
             const data = await res.json();
             setProducts(data);
         };
